@@ -52,3 +52,22 @@
 
     // array_merge() combina dos o más arrays en uno solo
     // Eemplo de uso de array_merge() con arrays multidimensionales
+    $beers2 = [
+        [
+            "name" => "Cerveza Negra",
+            "type" => "Dark Ale",
+            "alcohol" => 6.0,
+            "price" => 3.80
+        ],
+        [
+            "name" => "Cerveza Rubia",
+            "type" => "Blonde Ale",
+            "alcohol" => 5.5,
+            "price" => 3.20
+        ]
+    ];
+
+    $beers_combined = array_merge($beers, $beers2);
+    print_r("*** Array combinado con array_merge() ***\n");
+    print_r($beers_combined);
+    print_r("\n");
