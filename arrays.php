@@ -26,6 +26,11 @@
     array_push($frutas, "Piña");
     print_r($frutas);
     print_r("\n");
+    // Otra forma de agregar un elemento al array
+    print_r("*** Agregar un elemento al final del array por medio de un indice array[] ***\n\n");
+    $frutas[] = "Pitaya"; 
+    print_r($frutas);
+    print_r("\n");
     // Eliminar el primer elemento del array con el método array_shift()
     print_r("*** Eliminar el primer elemento del array con el método array_shift() ***\n\n");
     array_shift($frutas);
@@ -46,4 +51,9 @@
     sort($frutas);
     print_r($frutas);
     print_r("\n");
-    
+    // Saber si un elemento existe en el array 
+    if (in_array("Mango", $frutas)) {
+        print_r("Existe\n");
+    } else {
+        print_r("No existe\n");
+    }
