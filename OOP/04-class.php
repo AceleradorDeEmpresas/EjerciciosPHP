@@ -14,6 +14,7 @@
             $this->date = $date;
         }
 
+        // Destructor
         public function __destruct() {
             echo "Objeto Sale destruido.";
         }
